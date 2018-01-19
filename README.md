@@ -14,7 +14,7 @@ Provides safe reference fields for mongoengine and Flask-admin dashboard.
 
 ## Example
 
-Some simple examples of what MongoEngine code looks like:
+In the example bellow, mongosafe handles missing references automatically:
 
 ```python
 
@@ -47,7 +47,3 @@ print (a.unprotectedBs)                # [<B: B object>, DBRef('b', ObjectId('5a
 
 ```
 
-Tests
-=====
-To run the test suite, ensure you are running a local instance of MongoDB on
-the standard port and have ``nose`` installed. Then, run ``python setup.py nosetests``.
