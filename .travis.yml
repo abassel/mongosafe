@@ -28,11 +28,14 @@ install:
   - pip install -r requirement.txt
   - pip install coveralls
 
+
 script:
   - py.test --cov-report term-missing --cov tests -v
 
+
 after_success:
   - coveralls
+
 
 notifications:
   email:
