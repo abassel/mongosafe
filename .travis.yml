@@ -30,7 +30,7 @@ install:
 
 
 script:
-  - py.test --cov-report term-missing --cov tests -v
+  - py.test --cov-report term-missing --cov=mongosafe tests -v
 
 
 after_success:
