@@ -4,10 +4,12 @@
 # python setup.py build
 # python setup.py sdist
 # python setup.py bdist_egg
+# LATEST
 
+# python3 setup.py bdist_wheel --universal
 
-from __future__ import absolute_import
-from __future__ import print_function
+# from __future__ import absolute_import
+# from __future__ import print_function
 
 import io
 from glob import glob
@@ -29,7 +31,7 @@ def read(*names, **kwargs):
 
 setup(
     name='mongosafe',
-    version='0.0.3',
+    version='0.0.4',
     license='MIT license',
     description='Provides safe reference fields for mongoengine and Flask-admin dashboard.',
     author='Alexandre Bassel',
